@@ -5,11 +5,9 @@ const {
   getAllUsers,
   getUser,
   updateUser,
-  checkBodyReq,
 } = require('../controllers/user-controllers');
 
 const router = express.Router();
-
 
 router.route('/').get(getAllUsers).post(createUser);
 
